@@ -40,10 +40,6 @@ pnpm dev
 pnpm build
 ```
 
-## 👥 개발자 정보
-
-- **서대원 (10tacion)**: [GitHub](https://github.com/10tacion)
-
 ## 🔗 관련 링크
 
 이 인증 서비스는 모립(Morib) Electron 애플리케이션과 함께 동작합니다. 모립은 집중과 생산성 향상을 위한 데스크톱 애플리케이션으로, 사용자의 집중력을 높이는 데 도움을 줍니다.
