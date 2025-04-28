@@ -70,7 +70,7 @@ function Index() {
 		setIsExiting(true);
 		// 애니메이션이 완료된 후 페이지 이동
 		setTimeout(() => {
-			navigate({ to: "/login", replace: true });
+			navigate({ to: "/login" });
 		}, 700);
 	};
 
