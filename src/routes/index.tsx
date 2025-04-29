@@ -103,9 +103,9 @@ function Index() {
 						<div className="flex w-full flex-col">
 							{/* 타이틀 영역에 고정 높이 지정 */}
 							<div className="mb-[3rem]">
-								<h1 className="title-bold-72 md:text-8xl sm:text-7xl whitespace-pre-line leading-130 flex flex-col">
+								<h1 className="text-4xl 2xl:text-8xl md:text-7xl sm:text-6xl font-bold whitespace-pre-line leading-130 flex flex-col">
 									<span className="title-animate">당신을 위한</span>
-									<span className="typing-cursor typing-container mt-[-1rem]">
+									<span className="typing-cursor typing-container lg:mt-[0.5rem] mt-[0.5rem]">
 										{typedText}
 									</span>
 								</h1>
@@ -126,7 +126,7 @@ function Index() {
 						<img
 							src="/timer.svg"
 							alt="몰입 타이머 시각화"
-							className="ml-[3.7rem] w-full h-auto img-animate"
+							className="w-full h-auto img-animate mr-[3.7rem]"
 						/>
 					</section>
 				</div>

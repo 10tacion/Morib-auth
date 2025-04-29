@@ -37,7 +37,7 @@ function RouteComponent() {
 				/>
 
 				<div className="flex flex-col justify-center items-center gap-[6rem]">
-					<h1 className="title-bold-56 text-center md:text-8xl sm:text-7xl whitespace-pre-line leading-130 slide-in">
+					<h1 className="text-4xl text-center 2xl:text-8xl md:text-7xl sm:text-6xl font-bold whitespace-pre-line leading-130 slide-in">
 						{"시간을 소중히 여긴다면,\n모립과 함께 집중해보세요"}
 					</h1>
 
