@@ -76,7 +76,7 @@ function Index() {
 
 	return (
 		<div className="h-screen w-screen fixed">
-			<div className="main-container flex h-screen w-screen items-center justify-end pl-[12.5vw] py-[12.5vh] bg-[#181C22] text-white relative overflow-hidden transition-all duration-700 opacity-0">
+			<div className="main-container flex h-screen w-screen items-center justify-center pl-0 sm:pl-0 md:pl-[12.5vw] md:justify-end py-[12.5vh] bg-[#181C22] text-white relative overflow-hidden transition-all duration-700 opacity-0">
 				<div
 					className={`bg-animate transition-opacity duration-500 ${isExiting ? "opacity-0" : ""}`}
 				/>
@@ -92,7 +92,7 @@ function Index() {
 				<div
 					className={`flex h-full w-full items-center relative z-10 transition-all duration-700 ${isExiting ? "translate-y-12 opacity-0" : ""}`}
 				>
-					<section className="flex-[4] flex flex-col justify-center h-[39.63vh] gap-[8rem]">
+					<section className="flex-[4] flex flex-col md:items-start items-center justify-center h-[39.63vh] gap-[8rem]">
 						<img
 							src="/logo.svg"
 							alt="Morib 로고"
@@ -100,10 +100,10 @@ function Index() {
 						/>
 
 						{/* 제목 - 피그마 기준 72px 폰트, 줄간격 1.3 */}
-						<div className="flex w-full flex-col">
+						<div className="flex w-full flex-col md:items-start items-center">
 							{/* 타이틀 영역에 고정 높이 지정 */}
 							<div className="mb-[3rem]">
-								<h1 className="text-4xl 2xl:text-8xl md:text-7xl sm:text-6xl font-bold whitespace-pre-line leading-130 flex flex-col">
+								<h1 className="md:text-start text-center text-4xl 2xl:text-8xl md:text-7xl sm:text-6xl font-bold whitespace-pre-line leading-130 flex flex-col">
 									<span className="title-animate">당신을 위한</span>
 									<span className="typing-cursor typing-container lg:mt-[0.5rem] mt-[0.5rem]">
 										{typedText}
@@ -122,7 +122,7 @@ function Index() {
 						</div>
 					</section>
 
-					<section className="flex-[10] relative h-full flex items-center">
+					<section className="flex-[10] relative h-full hidden items-center md:flex">
 						<img
 							src="/timer.svg"
 							alt="몰입 타이머 시각화"
