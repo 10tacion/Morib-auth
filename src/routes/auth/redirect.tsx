@@ -11,7 +11,7 @@ function RouteComponent() {
 
 	const accessToken = params.get("accessToken");
 	const refreshToken = params.get("refreshToken");
-	const isOnboardingComplete = params.get("isOnboardingComplete");
+	const isOnboardingCompleted = params.get("isOnboardingCompleted");
 
 	// 페이지 진입 시 애니메이션 효과 적용
 	useEffect(() => {
@@ -24,10 +24,10 @@ function RouteComponent() {
 	}, []);
 
 	useEffect(() => {
-		if (accessToken && refreshToken && isOnboardingComplete) {
-			window.location.href = `morib://?accessToken=${encodeURIComponent(accessToken)}&refreshToken=${encodeURIComponent(refreshToken)}&isOnboardingComplete=${encodeURIComponent(isOnboardingComplete)}`;
+		if (accessToken && refreshToken && isOnboardingCompleted) {
+			window.location.href = `morib://?accessToken=${encodeURIComponent(accessToken)}&refreshToken=${encodeURIComponent(refreshToken)}&isOnboardingCompleted=${encodeURIComponent(isOnboardingCompleted)}`;
 		}
-	}, [accessToken, refreshToken, isOnboardingComplete]);
+	}, [accessToken, refreshToken, isOnboardingCompleted]);
 
 	return (
 		<div className="flex flex-col h-screen w-screen justify-center items-center text-white bg-[#181C22] overflow-hidden relative">
