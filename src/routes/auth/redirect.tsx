@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useLocation } from "@tanstack/react-router";
 import { useEffect } from "react";
-
 export const Route = createFileRoute("/auth/redirect")({
 	component: RouteComponent,
 });
 
 function RouteComponent() {
-	const params = new URLSearchParams(window.location.hash.substring(1));
+	const { search } = useLocation();
+	const params = new URLSearchParams(search);
 
 	const accessToken = params.get("accessToken");
 	const refreshToken = params.get("refreshToken");
