@@ -89,6 +89,10 @@ function RouteComponent() {
             >
               <img src="/apple_login.svg" alt="구글 로그인 버튼" />
             </button>
+
+            <p className="subhead-med-18 text-center text-gray-04">
+              웹 브라우저에서 로그인하면 여기로 다시 이동합니다.
+            </p>
           </div>
         </div>
       </div>
